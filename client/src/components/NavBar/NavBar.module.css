@@ -1,0 +1,46 @@
+.containertitle{
+  background-color: rgb(33, 63, 44);
+  display: flex;
+  justify-content: flex-start;
+  height: 75px;
+}
+
+.containerbutton{
+  border-bottom: 5px;
+  border-color: black;
+  width: 13%;
+  height: 45px;
+  position: relative;
+  top: 20px;
+  left: 65%;
+  border-radius: 10px;
+}
+
+
+
+.buttoncreate{
+  position: relative;
+  top: 8px;
+  right: 14px;
+  width: 200px;
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.buttoncreate:hover{
+  color: aquamarine;
+  text-shadow:0 0 7px aquamarine;
+}
+
+.title{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 30px;
+  color: aliceblue;
+  letter-spacing: 3px;
+}
+

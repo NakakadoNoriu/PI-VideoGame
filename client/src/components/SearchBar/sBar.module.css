@@ -1,0 +1,41 @@
+.containerSearchbar{
+  width: 20%;
+  height: 15px;
+  max-width: 700px;
+  /* background: rgba(255,255,255,0.2); */
+  background-color: rgb(51, 54, 53);
+  display: flex;
+  position: relative;
+  top: 10px;
+  border-radius: 60px;
+  padding: 10px 20px;
+}
+
+.input{
+  background: transparent;
+  flex: 1;
+  width: 100%;
+  position: relative;
+  bottom: 15px;
+  right: 20px;
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+  color: #cac7ff;
+  
+}
+
+.barbutton{
+  border: 0;
+  border-radius: 5px 35px 35px 5px;
+  background: rgb(145, 137, 137);
+  color: white;
+  width: 60px;
+  height: 35px;
+  position: relative;
+  bottom: 10px;
+  left: 20px;
+  cursor: pointer;
+}
+

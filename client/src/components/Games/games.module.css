@@ -1,0 +1,30 @@
+.cardContainer{
+  margin: 35px 35px;
+  box-shadow: 0 4px 8px lightskyblue, 0 6px 20px 0 black;
+  background-color: rgb(18, 44, 44);
+  float: left;
+  width: 250px;
+  height: 330px;
+  position: relative;
+  bottom: 140px;
+}
+
+.image{
+  width: 250px;
+  height: 200px;
+};
+
+
+.text{
+  display: flex;
+  align-items: flex-start;
+
+}
+
+.name{
+  color: rgb(154, 167, 162);
+  text-shadow: 1px 0 0;
+  letter-spacing: 1px;
+}
+
+
