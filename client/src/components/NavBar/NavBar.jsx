@@ -8,9 +8,7 @@ export default function Navbar({setCurrentPage}){
     <div className={s.containerNav}>
       <div className={s.containertitle}>
         <h2 className={s.title}>Videogame List:</h2>
-        <div className={s.containerbutton}>
-          <Link to={'/create'}><button className={s.buttoncreate}>Let´s to Create</button></Link>
-        </div>
+        <Link to={'/create'}><button className={s.buttoncreate}>Let´s to Create</button></Link>
       </div>
       <div className={s.containerbar}>
         <SearchBar setCurrentPage={setCurrentPage}/>

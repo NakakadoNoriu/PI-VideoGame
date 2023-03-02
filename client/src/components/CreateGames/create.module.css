@@ -1,44 +1,23 @@
 .containerform{
   background-color: #120212;
   background-size: cover;
-  height: 130vh;
+  height: 100vh;
 }
-
-/* form  */
-.form{
-  width: 400px;
-  background-color: rgb(43, 59, 56);
-  padding: 30px;
-  margin: auto;
-  margin-top: 100px;
-  border-radius: 4px;
-  font-family: 'calibri';
-  color: white;
-  position: relative;
-  bottom: 4%;
-  left: 25%;
-}
-
 
 .containerencabezado{
-  display: flex;
-  justify-content: center;
+  position: relative;
   background-color: rgb(41, 63, 42);
   height: 70px;
 }
 
-.titlecreate{
-  color: white;
-  position: relative;
-  bottom: 10px;
-  left: 40px;
-  
-}
-
 .buttomback{
-  position: relative;
-  right: 770px;
-  top: 15px;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px auto;
+  padding: 10px;
   width: 190px;
   height: 35px;
   cursor: pointer;
@@ -49,8 +28,35 @@
 }
 
 .buttomback:hover{
+  transition: ease-in .5s;
   color: aquamarine;
   text-shadow:0 0 7px aquamarine;
+}
+
+.titlecreate{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-20%);
+  margin: 20px auto; 
+  padding: 5px;
+  color: white;
+}
+
+
+
+.form{
+  width: 400px;
+  background-color: rgb(43, 59, 56);
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+}
+
+.labelForm{
+  color: #a8fc98;
 }
 
 .input{
@@ -72,6 +78,11 @@
   background-color: transparent;
 }
 
+.contgenre{
+  display: inline;
+}
+
+
 .buttoncreategame{
   background-color: white;
   border: none;
@@ -92,131 +103,26 @@
   top: 20px;
   
 }
-/* registro platforms */
 
 .selectform{
   cursor: pointer;
 }
 
-.boxregisterplat{
-  background-color: rgb(50, 77, 52);
-  width: 20%;
-  height: 60%;
-  position: absolute;
-  left: 40px;
-  bottom: 20%;
-  border-radius: 4px;
-  box-shadow: -5px 5px 5px rgb(0, 255, 0);
+@media (max-width: 800px){
+  .titlecreate{
+    font-size: 15px;
+    transform: translate(-50%,-10%);
+    
+  }
+  .buttomback{
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+  }
+  .form{
+    width: 250px;
+  }
+  .containerform{
+    height: 130vh;
+  }
 }
-
-.textregistroplat{
-  position: relative;
-  right: 30%;
-  font-size: 20px;
-  color: white;
-}
-
-.registroplat{
-  display: flex;
-  justify-content: flex-start;
-  position: relative;
-  left: 10px;
-}
-
-.buttondelete{
-  width: 20px;
-  height: 20px;
-  position: relative;
-  top: 23px;
-  left: 10px;
-  color: white;
-  background-color: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-color: white;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-
-
-.registroplat{
-  background-color:transparent;
-  width: 160px;
-}
-
-.registrolist{
-  color: white;
-}
-
-.errormsgplat{
-  background-color: transparent;
-  width: 150px;
-  position: relative;
-  left: 50px;
-  color: red;
-
-}
-
-/* box registro genre: */
-.boxregistrogenre{
-  display: flex;
-  justify-content: flex-start;
-  background-color: rgb(50, 77, 52);
-  width: 20%;
-  height: 60%;
-  position: absolute;
-  left: 30%;
-  bottom: 20%;
-  border-radius: 4px;
-  box-shadow: -5px 5px 5px rgb(0, 255, 0);
-}
-
-.textregistrogenre{
-  position: relative;
-  
-  bottom: 25px;
-  font-size: 20px;
-  color: white;
-  background-color: transparent;
-}
-
-.buttondeletegenre{
-  background-color: transparent;
-  height: 20px;
-  position: relative;
-  top: 9px;
-  left: 15px;
-  border-color: white;
-  border-radius: 4px;
-  color: white;
-}
-
-.registrogenre{
-  background-color: transparent;
-  width: 200px;
-  display: flex;
-  height: 50px;
-  justify-content: flex-start;
-  position: relative;
-  bottom: 20px;
-}
-
-.registrolistgenre{
-  color: white;
-  position: relative;
-  bottom: 15px;
-  left: 5px;
-}
-
-.errormsggenre{
-  background-color: transparent;
-  color: red;
-  height: 60px;
-  width: 150px;
-  position: relative;
-  top: 20px;
-  right: 20%;
-}
-

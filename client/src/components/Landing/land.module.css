@@ -1,83 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
 .containerLanding{
-  width: 100%;
+  background-image: url("../../image/clash.jpg");
+  display: grid;
+  background-position: center ;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-color: #464646;
+  filter:brightness(0.6);
+  max-width: 100%;
   height: 100vh;
-  background-image: url(https://i.pinimg.com/originals/59/bf/96/59bf96fde108d05bbaa2f096de0934d5.gif);
-  background-size: cover;
+}
+
+.containersalido{
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  margin: auto; 
+  border: 0px solid #ccc;
+  background-color: rgba(60, 60, 61, 0.7);
+  box-shadow: 10px 0 10px 0 #131312;
 }
-
-.containerbutton{
-  position: relative;
-  right: 45%;
-  background-color: rgb(6, 24, 29);
-  border: none;
-  border-radius: 10px;
-  width: 30%;
-  height: 5%;
-}
-
 
 
 .homebutton{
-  display: inline-block;
-  padding: 10px 20px 20px;
-  font-size: 20px;
-  background-color: transparent;
-  border: 0px;
-  color: #165c5a;
-  text-transform: uppercase;
-  letter-spacing: 10px;
-  bottom: 4px;
-  position: relative;
-  border-radius: 5px;
+  font-family: 'Anton', sans-serif;
+  background: #464646;
+  color: #888888;
+  font-size: 25px;
+  outline: none;
+  border: none;
+  width: 200px;
+  height: 50px;
   cursor: pointer;
-  transition: all ease-out 200ms;
 }
+
+
+
+
 .homebutton:hover{
-  color: #38ede8;
-  text-shadow: 3px 2px 3px #38ede8;
+  transition: ease-in .5s;
+  color: #f0f1f1;
+  box-shadow: 2px 4px 5px 7px #444444;
 }
 
-.homebutton::after,
-.homebutton::before{
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 78%;
-  left: -3px;
-  top: -3px;
-  border: 3px solid #165c5a;
-  border-radius: 8px;
-  transition: all ease-out 200ms;
-}
-.homebutton:hover::before,
-.homebutton:hover::after{ 
-  border-color: #38ede8;
-}
-.homebutton:hover::before{
-  filter: blur(4px)
+@media (max-width: 600px){
+
+  .containersalido{
+    height: 100px;
+  }
+  .homebutton{
+    font-size: 10px;
+    width: 100px;
+    height: 30px;
+  }
 }
 
-.containertitle{
-  background-color: transparent;
-  position: relative;
-  bottom: 250px;
-  letter-spacing: 3px;
-  font-size: 30px;
-  color: rgb(15, 189, 93);
-  text-shadow: 7px 4px 4px rgb(4, 77, 46);
-}
 
-.msg{
-  color: white;
-}
 
-.containermsg{
-  background-color: transparent;
-  position: relative;
-  top: 45%;
-  right: 70%;
-  letter-spacing: 4px;
-}

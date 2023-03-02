@@ -74,9 +74,13 @@ export default function Home(){
   if(videogame.length){
     return(
       <div className={s.containerall}>
-        <div>
+        <div >
           <Navbar setCurrentPage={setCurrentPage}/>
+          <div className={s.containerbuttonreset}>
+            <button className={s.buttonreset} onClick={handleResetPage}>Reset page</button>
+          </div>
           <br />
+          <div className={s.containerorder}>
             <div className={s.containeralfa}>
               <select className={s.selectasc} onChange={(e) => handleSort(e)}>
                 <option >Orden - Alfabetic</option>
@@ -110,13 +114,11 @@ export default function Home(){
                 <option value="Existing">Existing</option>
               </select>
             </div>
-            <div className={s.containerreset}>
-              <button className={s.buttonreset} onClick={handleResetPage}>Reset page</button>
-            </div>
-
-            <div className={s.containerpaginado}>
-              <Paginado gamesPerPage={gamesPerPage} videogame={videogame.length} paginado={paginado}/>
-            </div>
+            
+          </div>
+          <div className={s.containerpaginado}>
+            <Paginado gamesPerPage={gamesPerPage} videogame={videogame.length} paginado={paginado}/>
+          </div>
           <br />
           {
             currentVideogames.map((games) => <Games key={games.id} id={games.id} name={games.name} image={games.image ? games.image: 'https://intenta.digital/wp-content/uploads/2022/03/future-of-gaming.jpg'} genre={games.genre?games.genre + ' ' : games.genres.map(e => e.name) + ' '} rating={games.rating} />)
@@ -128,13 +130,8 @@ export default function Home(){
   }else if(!videogame.length){
     return(
       <div className={s.containerloading}>
-        <div className={s.containerload}>
-        </div>
+        <div className={s.containerload}></div>
           <p className={s.textload}>Loading...</p>
-        {/* <div className={s.containerimage}>
-          <img className={s.imageload} src="https://i.gifer.com/M99a.gif" alt="" />
-        </div> */}
-        
         <div className={s.containerresetload}>
           <button className={s.buttonresetpage} onClick={(e) => handleResetPage(e)}>Reset Page</button>
         </div>
